@@ -1,0 +1,307 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0f0f0f;
+}
+
+a {
+    text-decoration: none;
+    color: #0f0f0f;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffa500;
+}
+
+.form-container{
+    background-color: #fff;
+    color: #0f0f0f;
+
+    box-sizing: border-box;
+    width: 572px;
+    height: 512px;
+    margin-top: 6em;
+    border-radius: 4px;
+    padding-left: 121px;
+    position: relative;
+
+}
+
+.flex-title {
+    display: flex;
+    padding-top: 40px;
+    
+}
+
+.flex-title h4{
+    padding-left: 10px;
+    color: #0f0f0f;
+    font-size: 24px;
+
+}
+
+
+.form-container p {
+    margin-bottom: 20px;
+    position: relative;
+    top: -35px;
+}
+
+.form-container span {
+    color: var(--primary-color);
+
+}
+
+.form-container form > p {
+    color: #0f0f0f;
+    margin-top: 40px;
+    padding-left: 30px;
+}
+
+.flex-form {
+    position: relative;
+    top: -30px;
+}
+
+.form-input {
+    width: 335px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid #d1d1d1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #0f0f0f;
+
+    margin-top: 5px;
+
+
+    
+}
+
+input[type=email] {
+    background-image: url('../images/mail.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px;
+    padding-left: 40px;
+    transition: 1.2;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type=email]:focus {
+    border: 2px solid #ffa500;
+    background-image: url('../images/mail-focus.svg');
+}
+
+input[type=password] {
+    background-image: url('../images/lock.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px;
+    padding-left: 40px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+input[type=password]:focus {
+    border: 2px solid #ffa500;
+    background-image: url('../images/lock-focus.svg');
+    padding-right: 1px;
+
+}
+
+.password-conteiner {
+    width: 335px;
+    position: relative;
+}
+
+.password-container span {
+    position: absolute;
+    margin-top: 15px;
+    right: 10px;
+
+}
+
+.form-button{
+    width: 335px;
+    height: 40px;
+    padding: 12px, 24px, 12px, 24px;
+    margin-top: 10px;
+
+    background-color: #0f0f0f;
+    border: 1px black;
+    border-radius: 4px;
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+    vertical-align: top;
+    transition: 0.3s;
+    
+}
+
+.form-button:hover{
+    background-color: #212121;
+}
+
+/* Mobile Large */
+@media only screen and (max-width: 430px) and (min-width: 390px){
+    .form-container, .form-container input[type=email], .form-container input[type=password]{
+        background-color: #fff;
+    }
+
+    .form-container {
+        margin: 20px;
+        padding: 0;
+        margin-left: 30px;
+        position: relative;
+        top: -60px;
+        width: 100%;
+        max-width: 80vw;
+
+    }
+
+    .flex-title h4{
+        font-size: 24px;
+    }
+    
+    .form-container p{
+        font-size: 15px;
+     }
+
+    .container{
+        font-size: 15px;
+        padding-left: 30px;
+        margin: 0;
+        position: absolute;
+        
+    }
+
+    .flex-title{
+        padding-top: 0;
+    }
+
+    .flex-form span {
+        font-size: 14px;
+    }
+
+    .flex-form input,
+    .password-container, .form-button{
+        width: 350px;
+    }
+
+    form p {
+        margin-left: 15px;
+    }
+}
+
+/* Mobile Medium */
+@media only screen and (max-width: 375px) and (min-width: 320px){
+    .form-container, .form-container input[type=email], .form-container input[type=password]{
+        background-color: #fff;
+    }
+
+    .form-container {
+        margin: 20px;
+        padding: 0;
+        margin-left: 20px;
+        position: relative;
+        top: -60px;
+        width: 100%;
+        max-width: 80vw;
+
+    }
+
+    .flex-title h4{
+        font-size: 24px;
+    }
+
+    .flex-title {
+        top: 0;
+    }
+    
+    .form-container p{
+        font-size: 15px;
+     }
+
+    .flex-form span {
+        font-size: 12px;
+    }
+}
+
+/* Mobile Small */
+@media only screen and (max-width: 320px){
+    .form-container, .form-container input[type=email], .form-container input[type=password]{
+        background-color: #fff;
+    }
+
+    .form-container {
+        margin: 20px;
+        padding: 0;
+        margin-left: 15px;
+        position: relative;
+        top: -60px;
+        width: 100%;
+        max-width: 80vw;
+
+    }
+
+    .flex-title h4{
+        font-size: 24px;
+    }
+
+    .flex-title{
+        padding-top: 0;
+    }
+    
+    .form-container p{
+        font-size: 13px;
+     }
+
+    .flex-form span {
+        font-size: 12px;
+    }
+
+
+    .password-container, 
+    .form-input, 
+    .form-button {
+        width: 290px;
+    }
+
+
+}
+
+
+/*  Desktop Screen */
+@media only screen and (min-width: 750px) and (max-width: 1200px){
+    .image-container {
+        display: none;
+        visibility: 0;
+    }
+}
+
+@media only screen and (max-width: 770px){
+    .image-container {
+        display: none;
+        visibility: 0;
+    }
+    
+    .form-container, .form-container input[type=email], .form-container input[type=password]{
+        background-color: #fff;
+    }
+}
+

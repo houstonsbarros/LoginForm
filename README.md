@@ -7,6 +7,9 @@
 ## ⚡ Preview do site
 ![Preview](https://user-images.githubusercontent.com/107281650/176332287-aa0c325f-0a05-40fb-b3d9-727f4ae90d81.png)
 
+## 🔗 Link do site
+- https://loginformhb.netlify.app/
+
 ## 🚀 Tecnologias usadas
 - HTML
 - CSS
